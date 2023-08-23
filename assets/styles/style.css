@@ -1,0 +1,131 @@
+html, body {               
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20% 70% 10%;
+    background-color: pink;
+}
+
+header, footer {
+    grid-column: span 6;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}   
+
+header {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+footer {
+    font-style: italic;
+}
+
+nav {
+    grid-column: span 1;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav > a {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    grid-column: span 5;
+    border: 1px solid black;
+}
+
+form {
+    display: grid;
+    grid-template-columns: [labels] 1fr [contents] 2fr ;
+    border: 1px solid black;
+    margin: 10% 20% 30% 20%;
+}
+
+form > label {
+    grid-column: labels;
+    border: 1px solid black;
+    text-align: center;
+}
+
+form > input, textarea, button {
+    grid-column: contents;
+    border: 1px solid black;
+}
+
+
+/* .myTable {
+    margin: 15% 25% 45% 25%;
+    /* width: 365px; */
+    /* height: 150px; */
+    width: 50%;
+    height: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.myTable td {
+    border: 1px solid black;
+}
+
+.myTable input, .myTable textarea, .myTable button {
+    width: 95%;
+    box-sizing: border-box;
+} */
+
+.homeMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content1 {
+    margin: 3%;
+    flex-basis: 20%;
+}
+
+#content2 {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.animalMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.animalMain p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.firstRow, .secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
